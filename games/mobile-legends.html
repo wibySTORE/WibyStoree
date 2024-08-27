@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WibyStore | Top Up Mobile Legends</title>
+    <link rel="stylesheet" href="../src/styles/game.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <span>
+        <a href="/" class="logo">WibyStore</a>
+      </span>
+      <nav class="navbar">
+        <span class="slogan">
+          <h4>Top Up Game & Voucher Murah</h4>
+        </span>
+        <button class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <div
+      class="image-header"
+      style="background-image: url('/images/mlbb-cover.webp')"
+    ></div>
+    <main class="game-container">
+      <section class="grid-cols-2 section-form_topup">
+        <div class="game-description">
+          <img src="../images/mlbb.png" alt="Mobile Legends" />
+          <h2>Top Up Mobile Legends</h2>
+          <p>
+            Top Up Diamond Mobile Legends Murah. Cukup Masukan Id dan Server
+            Anda. Maka Diamond Akan Langsung Terisi.
+          </p>
+        </div>
+        <div>
+          <form action="">
+            <fieldset class="form-input">
+              <h3><span>1.</span> Masukan User Id dan Server Id</h3>
+              <div class="form-input__id">
+                <input
+                  type="number"
+                  name="user_id"
+                  id="user_id"
+                  required
+                  placeholder="Masukan User ID"
+                />
+                <input
+                  type="number"
+                  name="server_id"
+                  id="server_id"
+                  required
+                  placeholder="Masukan Server ID"
+                />
+              </div>
+              <p>
+                Untuk mengetahui User ID Anda, silahkan klik menu profile
+                dibagian kiri atas pada menu utama game. User ID akan terlihat
+                dibagian bawah Nama karakter game Anda. Silahkan masukan User ID
+                dan Server ID Anda untuk menyelesaikan transaksi.
+                <b>Contoh: 12345678(1234)</b>.
+              </p>
+            </fieldset>
+
+            <fieldset class="form-input">
+              <h3><span>2.</span> Pilih Nominal Top Up</h3>
+              <div class="grid grid-cols-3">
+
+                <label class="nominal" data-price="26.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="220 (80+20/Hari) Diamonds MLBB Paket 1x weekly Pass Rp26.000"
+                  />
+                  <span>
+                    1x Weekly Pass
+                    <img
+                      src="../images/mllbwekly.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 26.000</span>
+                </label>
+
+                <label class="nominal" data-price="53.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="440 (80+20/Hari) Diamonds MLBB Paket 2x weekly Pass Rp53.000"
+                  />
+                  <span>
+                    2x Weekly Pass
+                    <img
+                      src="../images/mllbwekly.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 53.000</span>
+                </label>
+                <label class="nominal" data-price="77.900">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="660 (80+20/Hari) Diamonds MLBB Paket 3x weekly Pass Rp77.900"
+                  />
+                  <span>
+                    3x Weekly Pass
+                    <img
+                      src="../images/mllbwekly.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 77.900</span>
+                </label>
+
+                <label class="nominal" data-price="105.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="880 (80+20/Hari) Diamonds MLBB Paket 4x weekly Pass Rp105.300"
+                    />
+                  <span>
+                    4x Weekly Pass
+                    <img
+                      src="../images/mllbwekly.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 105.300</span>
+                </label>
+
+                <label class="nominal" data-price="133.400">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="1100 (80+20/Hari) Diamonds MLBB Paket 5x weekly Pass Rp133.400"
+                  />
+                  <span>
+                    5x Weekly Pass
+                    <img
+                      src="../images/mllbwekly.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 133.400</span>
+                </label>
+
+                <label class="nominal" data-price="2.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="5 Diamonds MLBB Rp2.000"
+                  />
+                  <span>
+                    5
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 2.000</span>
+                </label>
+                <label class="nominal" data-price="4.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="12 Diamonds MLBB Rp4.000"
+                  />
+                  <span>
+                    12
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 4.000</span>
+                </label>
+
+                <label class="nominal" data-price="7.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="19 Diamonds MLBB Rp7.000"
+                  />
+                  <span>
+                    19
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 7.000</span>
+                </label>
+
+                <label class="nominal" data-price="9.700">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="28 Diamonds MLBB Rp9.700"
+                  />
+                  <span>
+                    28
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 9.700</span>
+                </label>
+                <label class="nominal" data-price="11.600">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="36 Diamonds MLBB Rp11.600"
+                  />
+                  <span>
+                    36
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 11.600</span>
+                </label>
+
+                <label class="nominal" data-price="13.800">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="44 Diamonds MLBB Rp13.800"
+                  />
+                  <span>
+                    44
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 13.800</span>
+                </label>
+
+                <label class="nominal" data-price="16.700">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="59 Diamonds MLBB Rp16.700"
+                  />
+                  <span>
+                    59
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 16.500</span>
+                </label>
+
+                <label class="nominal" data-price="20.800">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="74 Diamonds MLBB Rp20.800"
+                  />
+                  <span>
+                    74
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 20.800</span>
+                </label>
+                <label class="nominal" data-price="22.400">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="86 Diamonds MLBB Rp22.400"
+                  />
+                  <span>
+                    86
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 22.400</span>
+                </label>
+
+                <label class="nominal" data-price="29.400">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="112 Diamonds MLBB Rp29.400"
+                  />
+                  <span>
+                    112
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 29.400</span>
+                </label>
+                <label class="nominal" data-price="43.600">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="172 Diamonds MLBB Rp43.600"
+                  />
+                  <span>
+                    172
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 43.600</span>
+                </label>
+                <label class="nominal" data-price="48.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="185 Diamonds MLBB Rp48.000"
+                  />
+                  <span>
+                    185
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+
+                  <span class="nominal-1">Rp 48.000</span>
+                </label>
+                <label class="nominal" data-price="55.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="222 Diamonds MLBB Rp55.300"
+                  />
+                  <span>
+                    222
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 55.300</span>
+                </label>
+
+                <label class="nominal" data-price="60.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="257 Diamonds MLBB Rp6.300"
+                  />
+                  <span>
+                    257
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 60.300</span>
+                </label>
+
+                <label class="nominal" data-price="80.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="344 Diamonds MLBB Rp80.300"
+                  />
+                  <span>
+                    344
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 80.300</span>
+                </label>
+
+                <label class="nominal" data-price="101.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="429 Diamonds MLBB Rp101.300"
+                  />
+                  <span>
+                    429
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 101.300</span>
+                </label>
+
+                <label class="nominal" data-price="119.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="514 Diamonds MLBB Rp119.300"
+                  />
+                  <span>
+                    514
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+
+                  <span class="nominal-1">Rp 119.300</span>
+                </label>
+
+                <label class="nominal" data-price="148.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="600 Diamonds MLBB Rp148.300"
+                  />
+                  <span>
+                    600
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+
+                  <span class="nominal-1">Rp 148.300</span>
+                </label>
+
+                <label class="nominal" data-price="176.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="706 Diamonds MLBB Rp176.300"
+                  />
+                  <span>
+                    706
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+
+                  <span class="nominal-1">Rp 176.300</span>
+                </label>
+
+                <label class="nominal" data-price="115.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="875 Diamonds MLBB Rp115.300"
+                  />
+                  <span>
+                    875
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 115.300</span>
+                </label>
+
+                <label class="nominal" data-price="240.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="963 Diamonds MLBB Rp240.300"
+                  />
+                  <span>
+                    963
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 240.300</span>
+                </label>
+
+                <label class="nominal" data-price="248.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="1050 Diamonds MLBB Rp248.300"
+                  />
+                  <span>
+                    1050
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 248.300</span>
+                </label>
+
+                <label class="nominal" data-price="300.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="1220 Diamonds MLBB Rp300.000"
+                  />
+                  <span>
+                    1220
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 300.000</span>
+                </label>
+
+                <label class="nominal" data-price="330.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="1412 Diamonds MLBB Rp330.000"
+                  />
+                  <span>
+                    1412
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 330.000</span>
+                </label>
+
+                <label class="nominal" data-price= 502.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="2195 Diamonds MLBB Rp502.300"
+                  />
+                  <span>
+                    2195
+                    <img
+                      src="../images/MLBB_Diamonds.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 502.300</span>
+                </label>
+
+                <label class="nominal" data-price="78.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="Starlight membership Diamonds MLBB Rp78.300"
+                  />
+                  <span>
+                    Starlight Membership
+                    <img
+                      src="../images/mllbwekly.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 78.300</span>
+                </label>
+
+                <label class="nominal" data-price="175.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="Starlight plus membership Diamonds MLBB Rp175.000"
+                  />
+                  <span>
+                    Starlight Membership+
+                    <img
+                      src="../images/mllbwekly.png"
+                      alt="Mobile Legends Diamonds"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 175.000</span>
+                </label>
+
+              </div>
+            </fieldset>
+            
+            <fieldset class="form-input">
+              <h3><span>3.</span> Pilih Metode Pembayaran</h3>
+              <div class="payment">
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Gopay"
+                  />
+                  <img src="../images/gopay.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Gopay</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Dana"
+                  />
+                  <img src="../images/dana.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Dana</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Ovo"
+                  />
+                  <img src="../images/ovo.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Ovo</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Qris"
+                  />
+                  <img src="../images/qris.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Qris</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <!-- <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="BCA"
+                  />
+                  <img src="../images/bca.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>BCA</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label> -->
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Alfamart"
+                  />
+                  <img src="../images/alfamart.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Alfamart</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Indomaret"
+                  />
+                  <img src="../images/indomaret.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Indomaret</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+              </div>
+            </fieldset>
+            <button class="btn-order">Pesan Sekarang</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="footer">
+        <div class="description">
+          <span>
+            <a href="/" class="logo">WibyStore</a>
+          </span>
+          <br />
+          adalah salah satu website top up voucher game termurah di Indonesia.
+        </div>
+        <div class="menu">
+          <h3>Menu</h3>
+          <ul class="navbar-ul">
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3>Sosial Media</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Tik Tok</a></li>
+          </ul>
+        </div>
+        <div class="payment-footer">
+          <h3>Metode Pembayaran</h3>
+          <div class="payment-grid">
+            <div>
+              <img src="/images/ovo.webp" alt="" />
+            </div>
+            <div>
+              <img src="/images/dana.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/gopay.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/shopeepay.webp" alt="" />
+            </div>
+            <div>
+              <img src="/images/qris.webp" alt="" />
+            </div>
+            <div>
+              <img src="/images/alfamart.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/indomaret.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <small> Copyright &copy;2024 WibyStore. All Rights Reserved </small>
+      </div>
+    </footer>
+
+    <script src="../src/js/hamburger.js"></script>
+    <script src="../src/js/order.js"></script>
+    <script src="../src/js/keys.js"></script>
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>

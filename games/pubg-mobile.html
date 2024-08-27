@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WibyStore | Top Up PUBG Mobile</title>
+    <link rel="stylesheet" href="../src/styles/game.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <span>
+        <a href="/" class="logo">WibyStore</a>
+      </span>
+      <nav class="navbar">
+        <span class="slogan">
+          <h4>Top Up Game & Voucher Murah</h4>
+        </span>
+        <button class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <div
+      class="image-header"
+      style="background-image: url('/images/pubg-cover.jpg')"
+    ></div>
+    <main class="game-container">
+      <section class="grid-cols-2 section-form_topup">
+        <div class="game-description">
+          <img src="../images/pubgm.webp" alt="PUBG Mobile" />
+          <p>
+            Top Up UC PUBG Mobile Murah. Cukup Masukan User ID Anda. Maka UC
+            Akan Langsung Terisi.
+          </p>
+        </div>
+        <div>
+          <form action="">
+            <fieldset class="form-input">
+              <h3><span>1.</span> Masukan User ID</h3>
+              <input
+                class="form-input_ff"
+                type="number"
+                name="user_id"
+                id=""
+                required
+                placeholder="Masukan User ID"
+              />
+              <p>
+                Untuk mengetahui User ID Anda, silahkan klik menu profile
+                dibagian kiri atas pada menu utama game. User ID akan terlihat
+                dibagian bawah Nama karakter game Anda. Silahkan masukan User ID
+                Anda untuk menyelesaikan transaksi. <b>Contoh: 12345678</b>.
+              </p>
+            </fieldset>
+
+            <fieldset class="form-input">
+              <h3><span>2.</span> Pilih Nominal Top Up</h3>
+              <div class="grid grid-cols-3">
+                <label class="nominal" data-price="14.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="60 UC PUBGM Rp 14.000"
+                  />
+                  <span>
+                    60
+                    <img src="../images/PUBGM_UC.png" alt="PUBGM UC" />
+                  </span>
+                  <span class="nominal-1">Rp 14.000</span>
+                </label>
+                <label class="nominal" data-price="70.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="325 UC PUBGM Rp 70.000"
+                  />
+                  <span>
+                    325
+                    <img src="../images/PUBGM_UC.png" alt="PUBGM UC" />
+                  </span>
+                  <span class="nominal-1">Rp 70.000</span>
+                </label>
+                <label class="nominal" data-price="135.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="660 UC PUBGM Rp 135.000"
+                  />
+                  <span>
+                    660
+                    <img src="../images/PUBGM_UC.png" alt="PUBGM UC" />
+                  </span>
+                  <span class="nominal-1">Rp 135.000</span>
+                </label>
+                <label class="nominal" data-price="325.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="1800 UC PUBGM Rp 325.000"
+                  />
+                  <span>
+                    1800
+                    <img src="../images/PUBGM_UC.png" alt="PUBGM UC" />
+                  </span>
+                  <span class="nominal-1">Rp 325.000</span>
+                </label>
+                <label class="nominal" data-price="650.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="3850 UC PUBGM Rp 650.000"
+                  />
+                  <span>
+                    3850
+                    <img src="../images/PUBGM_UC.png" alt="PUBGM UC" />
+                  </span>
+                  <span class="nominal-1">Rp 650.000</span>
+                </label>
+                <label class="nominal" data-price="1.300.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="8100 UC PUBGM Rp 1.300.000"
+                  />
+                  <span>
+                    8100
+                    <img src="../images/PUBGM_UC.png" alt="PUBGM UC" />
+                  </span>
+                  <span class="nominal-1">Rp 1.300.000</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-input">
+              <h3><span>3.</span> Pilih Metode Pembayaran</h3>
+              <div class="payment">
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Gopay"
+                  />
+                  <img src="../images/gopay.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Gopay</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Dana"
+                  />
+                  <img src="../images/dana.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Dana</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Ovo"
+                  />
+                  <img src="../images/ovo.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Ovo</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Qris"
+                  />
+                  <img src="../images/qris.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Qris</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <!-- <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="BCA"
+                  />
+                  <img src="../images/bca.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>BCA</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label> -->
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Alfamart"
+                  />
+                  <img src="../images/alfamart.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Alfamart</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Indomaret"
+                  />
+                  <img src="../images/indomaret.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Indomaret</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+              </div>
+            </fieldset>
+            <button class="btn-order">Pesan Sekarang</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="footer">
+        <div class="description">
+          <span>
+            <a href="/" class="logo">WibyStore</a>
+          </span>
+          <br />
+          adalah salah satu website top up voucher game termurah di Indonesia.
+        </div>
+        <div class="menu">
+          <h3>Menu</h3>
+          <ul class="navbar-ul">
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3>Sosial Media</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Tik Tok</a></li>
+          </ul>
+        </div>
+        <div class="payment-footer">
+          <h3>Metode Pembayaran</h3>
+          <div class="payment-grid">
+            <div>
+              <img src="/images/ovo.webp" alt="" />
+            </div>
+            <div>
+              <img src="/images/dana.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/gopay.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/shopeepay.webp" alt="" />
+            </div>
+            <div>
+              <img src="/images/qris.webp" alt="" />
+            </div>
+            <div>
+              <img src="/images/alfamart.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/indomaret.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <small> Copyright &copy;2024 WibyStore. All Rights Reserved </small>
+      </div>
+    </footer>
+
+    <script src="../src/js/hamburger.js"></script>
+    <script src="../src/js/order.js"></script>
+    <script src="../src/js/keys.js"></script>
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>

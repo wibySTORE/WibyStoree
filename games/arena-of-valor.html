@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WibyStore | Top Up Arena of Valor</title>
+    <link
+      rel="shortcut icon"
+      href="/images/profil.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../src/styles/game.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <span>
+        <a href="/" class="logo">WibyStore</a>
+      </span>
+      <nav class="navbar">
+        <span class="slogan">
+          <h4>Top Up Game & Voucher Murah</h4>
+        </span>
+        <button class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <div
+      class="image-header"
+      style="background-image: url('/images/aov-cover.png')"
+    ></div>
+    <main class="game-container">
+      <section class="grid-cols-2 section-form_topup">
+        <div class="game-description">
+          <img src="../images/aov.jpg" alt="Arena of Valor" />
+          <p>
+            Top Up Arena of Valor Murah. Cukup Masukan User ID Anda. Maka
+            Voucher Akan Langsung Terisi.
+          </p>
+        </div>
+        <div>
+          <form action="">
+            <fieldset class="form-input">
+              <h3><span>1.</span> Masukan User ID</h3>
+              <input
+                class="form-input_ff"
+                type="number"
+                name="user_id"
+                id=""
+                required
+                placeholder="Masukan User ID"
+              />
+              <p>
+                Untuk mengetahui User ID Anda, silahkan klik menu profile
+                dibagian kiri atas pada menu utama game. User ID akan terlihat
+                dibagian bawah Nama karakter game Anda. Silahkan masukan User ID
+                Anda untuk menyelesaikan transaksi. <b>Contoh: 12345678</b>.
+              </p>
+            </fieldset>
+
+            <fieldset class="form-input">
+              <h3><span>2.</span> Pilih Nominal Top Up</h3>
+              <div class="grid grid-cols-3">
+                <label class="nominal" data-price="10.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="40 Vouchers AOV Rp 10.000"
+                  />
+                  <span>
+                    40
+                    <img
+                      src="../images/AOV_Vouchers.png"
+                      alt="Arena of VAlor Vouchers"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 10.000</span>
+                </label>
+                <label class="nominal" data-price="20.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="90 Vouchers AOV Rp 20.000"
+                  />
+                  <span>
+                    90
+                    <img
+                      src="../images/AOV_Vouchers.png"
+                      alt="Arena of VAlor Vouchers"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 20.000</span>
+                </label>
+                <label class="nominal" data-price="47.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="230 Vouchers AOV Rp 47.000"
+                  />
+                  <span>
+                    230
+                    <img
+                      src="../images/AOV_Vouchers.png"
+                      alt="Arena of VAlor Vouchers"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 47.000</span>
+                </label>
+                <label class="nominal" data-price="95.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="470 Vouchers AOV Rp 95.300"
+                  />
+                  <span>
+                    470
+                    <img
+                      src="../images/AOV_Vouchers.png"
+                      alt="Arena of VAlor Vouchers"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 95.300</span>
+                </label>
+                <label class="nominal" data-price="190.300">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="950 Vouchers AOV Rp 190.300"
+                  />
+                  <span>
+                    950
+                    <img
+                      src="../images/AOV_Vouchers.png"
+                      alt="Arena of VAlor Vouchers"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 190.300</span>
+                </label>
+                <label class="nominal" data-price="286.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="1430 Vouchers AOV Rp 286.000"
+                  />
+                  <span>
+                    1430
+                    <img
+                      src="../images/AOV_Vouchers.png"
+                      alt="Arena of VAlor Vouchers"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 286.000</span>
+                </label>
+                <label class="nominal" data-price="475.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="2390 Vouchers AOV Rp 475.000"
+                  />
+                  <span>
+                    2390
+                    <img
+                      src="../images/AOV_Vouchers.png"
+                      alt="Arena of VAlor Vouchers"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 475.000</span>
+                </label>
+                <label class="nominal" data-price="830.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="4800 Vouchers AOV Rp 830.000"
+                  />
+                  <span>
+                    4800
+                    <img
+                      src="../images/AOV_Vouchers.png"
+                      alt="Arena of VAlor Vouchers"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 830.000</span>
+                </label>
+                <label class="nominal" data-price="4.130.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="24050 Vouchers AOV Rp 4.130.000"
+                  />
+                  <span>
+                    24050
+                    <img
+                      src="../images/AOV_Vouchers.png"
+                      alt="Arena of VAlor Vouchers"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 4.130.000</span>
+                </label>
+
+                <label class="nominal" data-price="8.270.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="48200 Vouchers AOV Rp 8.270.000"
+                  />
+                  <span>
+                    48200
+                    <img
+                      src="../images/AOV_Vouchers.png"
+                      alt="Arena of VAlor Vouchers"
+                    />
+                  </span>
+                  <span class="nominal-1">Rp 8.270.000</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-input">
+              <h3><span>3.</span> Pilih Metode Pembayaran</h3>
+              <div class="payment">
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Gopay"
+                  />
+                  <img src="../images/gopay.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Gopay</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Dana"
+                  />
+                  <img src="../images/dana.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Dana</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Ovo"
+                  />
+                  <img src="../images/ovo.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Ovo</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Qris"
+                  />
+                  <img src="../images/qris.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Qris</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <!-- <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="BCA"
+                  />
+                  <img src="../images/bca.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>BCA</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label> -->
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Alfamart"
+                  />
+                  <img src="../images/alfamart.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Alfamart</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Indomaret"
+                  />
+                  <img src="../images/indomaret.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Indomaret</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+              </div>
+            </fieldset>
+            <button class="btn-order">Pesan Sekarang</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="footer">
+        <div class="description">
+          <span>
+            <a href="/" class="logo">WibyStore</a>
+          </span>
+          <br />
+          adalah salah satu website top up voucher game termurah di Indonesia.
+        </div>
+        <div class="menu">
+          <h3>Menu</h3>
+          <ul class="navbar-ul">
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3>Sosial Media</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Tik Tok</a></li>
+          </ul>
+        </div>
+        <div class="payment-footer">
+          <h3>Metode Pembayaran</h3>
+          <div class="payment-grid">
+            <div>
+              <img src="/images/ovo.webp" alt="" />
+            </div>
+            <div>
+              <img src="/images/dana.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/gopay.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/shopeepay.webp" alt="" />
+            </div>
+            <div>
+              <img src="/images/qris.webp" alt="" />
+            </div>
+            <div>
+              <img src="/images/alfamart.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/indomaret.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <small> Copyright &copy;2024 WibyStore. All Rights Reserved </small>
+      </div>
+    </footer>
+
+    <script src="../src/js/hamburger.js"></script>
+    <script src="../src/js/order.js"></script>
+    <script src="../src/js/keys.js"></script>
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>

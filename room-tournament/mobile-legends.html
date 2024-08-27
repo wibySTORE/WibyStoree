@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WibyStore | Room Tournamen Mobile Legends</title>
+    <link rel="stylesheet" href="../src/styles/game.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <span>
+        <a href="/" class="logo">WibyStore</a>
+      </span>
+      <nav class="navbar">
+        <span class="slogan">
+          <h4>Top Up Game & Voucher Murah</h4>
+        </span>
+        <button class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <div
+      class="image-header"
+      style="background-image: url('/images/mlbb-cover.webp')"
+    ></div>
+    <main class="game-container">
+      <section class="grid-cols-2 section-form_topup">
+        <div class="game-description">
+          <img src="../images/mlbb.png" alt="Mobile Legends" />
+          <h2>Room Tournamen Mobile Legends</h2>
+          <p>
+            Layanan Room Tournamen Termurah Se Indonesia, Open Mulai Jam 09.00 -
+            03.00 WIB. Mulai dari Solo Room Tour, Party, Fun Match, Event
+            Tournament, Scrim. Open All Skin yang ada di Mobile Legends, Mulai
+            dari skin Collector hingga Skin Prime. Buruan Sewa Roomnya Sekarang
+            Juga!!
+          </p>
+        </div>
+        <div>
+          <form action="">
+            <fieldset class="form-input">
+              <h3><span>1.</span> Masukan Data</h3>
+              <div style="display: flex; gap: 5px; margin-top: 10px">
+                <input
+                  type="text"
+                  name="user_id"
+                  id="user_id"
+                  required
+                  placeholder="Masukan User ID"
+                />
+                <input
+                  type="text"
+                  name="server_id"
+                  id="server_id"
+                  required
+                  placeholder="Masukan Server ID"
+                />
+              </div>
+              <div class="form-input__id">
+                <input
+                  type="text"
+                  name="date"
+                  id="date"
+                  required
+                  placeholder="Tanggal (Contoh: 1 Januari 2023)"
+                />
+                <input
+                  type="text"
+                  name="playing"
+                  id="playing"
+                  required
+                  placeholder="Jam Main (Contoh: 13:00 - 14:00)"
+                />
+              </div>
+            </fieldset>
+
+            <fieldset class="form-input">
+              <h3><span>2.</span> Pilih Layanan</h3>
+              <div class="grid grid-cols-3">
+                <label class="nominal" data-price="25.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="1 Match Rp 25.000"
+                  />
+                  <span> 1 Match </span>
+                  <span class="nominal-1">Rp 25.000</span>
+                </label>
+                <label class="nominal" data-price="50.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="1 Jam Rp 50.000"
+                  />
+                  <span> 1 Jam</span>
+                  <span class="nominal-1">Rp 50.000</span>
+                </label>
+                <label class="nominal" data-price="95.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="2 Jam Rp 95.000"
+                  />
+                  <span> 2 Jam </span>
+                  <span class="nominal-1">Rp 95.000</span>
+                </label>
+                <label class="nominal" data-price="130.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="3 Jam Rp 130.000"
+                  />
+                  <span> 3 Jam </span>
+                  <span class="nominal-1">Rp 130.000</span>
+                </label>
+                <label class="nominal" data-price="170.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="4 Jam Rp 170.000"
+                  />
+                  <span> 4 Jam </span>
+                  <span class="nominal-1">Rp 170.000</span>
+                </label>
+                <label class="nominal" data-price="210.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="5 Jam Rp 210.000"
+                  />
+                  <span> 5 Jam </span>
+                  <span class="nominal-1">Rp 210.000</span>
+                </label>
+                <label class="nominal" data-price="250.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="6 Jam Rp 250.000"
+                  />
+                  <span> 6 Jam </span>
+                  <span class="nominal-1">Rp 250.000</span>
+                </label>
+                <label class="nominal" data-price="290.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="7 Jam Rp 290.000"
+                  />
+                  <span> 7 Jam </span>
+                  <span class="nominal-1">Rp 290.000</span>
+                </label>
+                <label class="nominal" data-price="330.000">
+                  <input
+                    onclick="scrollToPayment()"
+                    type="radio"
+                    name="item_qty"
+                    required
+                    value="8 Jam Rp 330.000"
+                  />
+                  <span> 8 Jam </span>
+                  <span class="nominal-1">Rp 330.000</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-input">
+              <h3><span>3.</span> Pilih Metode Pembayaran</h3>
+              <div class="payment">
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Gopay"
+                  />
+                  <img src="../images/gopay.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Gopay</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Dana"
+                  />
+                  <img src="../images/dana.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Dana</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Ovo"
+                  />
+                  <img src="../images/ovo.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Ovo</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="ShopeePay"
+                  />
+                  <img src="../images/shopeepay.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>ShopeePay</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="BCA"
+                  />
+                  <img src="../images/bca.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>BCA</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Alfamart"
+                  />
+                  <img src="../images/alfamart.jpg" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Alfamart</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input
+                    type="radio"
+                    name="payment_method"
+                    required
+                    value="Indomaret"
+                  />
+                  <img src="../images/indomaret.webp" alt="" />
+                  <span
+                    ><small>Bayar dengan <b>Indomaret</b></small></span
+                  >
+                  <div class="form-input__price-section" style="display: none">
+                    <small>Harga</small>
+                    <div>Rp <span class="form-input__price"></span></div>
+                  </div>
+                </label>
+              </div>
+            </fieldset>
+            <button class="btn-order">Pesan Sekarang</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="footer">
+        <div class="description">
+          <span>
+            <a href="/" class="logo">WibyStore</a>
+          </span>
+          <br />
+          adalah salah satu website top up voucher game termurah di Indonesia.
+        </div>
+        <div class="menu">
+          <h3>Menu</h3>
+          <ul class="navbar-ul">
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3>Sosial Media</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Tik Tok</a></li>
+          </ul>
+        </div>
+        <div class="payment-footer">
+          <h3>Metode Pembayaran</h3>
+          <div class="payment-grid">
+            <div>
+              <img src="/images/ovo.webp" alt="" />
+            </div>
+            <div>
+              <img src="/images/dana.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/gopay.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/shopeepay.webp" alt="" />
+            </div>
+            <div>
+              <img src="/images/bca.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/alfamart.jpg" alt="" />
+            </div>
+            <div>
+              <img src="/images/indomaret.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <small> Copyright &copy;2024 WibyStore. All Rights Reserved </small>
+      </div>
+    </footer>
+
+    <script src="../src/js/hamburger.js"></script>
+    <script src="../src/js/orderTournamen.js"></script>
+    <script src="../src/js/keys.js"></script>
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>
