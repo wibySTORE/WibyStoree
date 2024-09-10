@@ -27,6 +27,6 @@ form.addEventListener("submit", (e) => {
   const inputNominal = form.elements.item_qty.value;
   const paymentMethod = form.elements.payment_method.value;
 
-  let url = `https://api.whatsapp.com/send?phone=6285273345587&text=*Halo%20Admin,%20Saya%20Mau%20Order%20Room%20Tournamen*.%0A%0ADetail%20Pesanan%20%3A%0A%0AUser%20ID%20%3A%20${userId}%0AServer%20%3A%20${serverId}%0ATanggal%20Match%20%3A%20${date}%0AWaktu%20Match%20%3A%20${playing}%0APembelian%20%3A%20${inputNominal}%0APembayaran%20%3A%20${paymentMethod}.%0A%0AOrder Via Web WibyStore`;
+  let url = `https://api.whatsapp.com/send?phone=6289512622649&text=*Halo%20Admin,%20Saya%20Mau%20Order%20Room%20Tournamen*.%0A%0ADetail%20Pesanan%20%3A%0A%0AUser%20ID%20%3A%20${userId}%0AServer%20%3A%20${serverId}%0ATanggal%20Match%20%3A%20${date}%0AWaktu%20Match%20%3A%20${playing}%0APembelian%20%3A%20${inputNominal}%0APembayaran%20%3A%20${paymentMethod}.%0A%0AOrder Via Web WibyStore`;
   window.open(url);
 });
